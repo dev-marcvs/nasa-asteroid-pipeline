@@ -4,7 +4,6 @@ from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobO
 from datetime import datetime, timedelta
 
 # --- CONFIGURAÇÕES ---
-# CORREÇÃO CRÍTICA: O ID do projeto TEM que ser minúsculo
 PROJECT_ID = "asteroid-data-project" 
 
 DATASET_SILVER = "nasa_asteroid_silver"
@@ -94,7 +93,7 @@ with DAG(
             }
         },
         location="us-central1",
-        project_id=PROJECT_ID  # <--- O PULO DO GATO: Força o uso do ID minúsculo
+        project_id=PROJECT_ID
     )
 
     task_ingest_bronze >> task_transform_spark >> task_update_gold
