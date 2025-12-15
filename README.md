@@ -35,7 +35,7 @@ Analysis of which physical characteristics most significantly influence the "Pot
 ### 2. Asteroid Clustering (K-Means)
 Unsupervised grouping of asteroids based on miss distance and velocity. The visualization reveals distinct clusters primarily driven by proximity to Earth.
 
-![Clusters](assets/Cluster.jpg)
+![Clusters](assets/Cluster.png)
 
 ### 3. Statistical Overview
 Correlation analysis between velocity, diameter, and hazard status.
@@ -53,7 +53,7 @@ Correlation analysis between velocity, diameter, and hazard status.
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/nasa-asteroid-pipeline.git](https://github.com/YOUR_USERNAME/nasa-asteroid-pipeline.git)
+   git clone [https://github.com/dev-marcvs/nasa-asteroid-pipeline.git](https://github.com/dev-marcvs/nasa-asteroid-pipeline.git)
    cd nasa-asteroid-pipeline
    ```
 
