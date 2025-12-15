@@ -1,0 +1,23 @@
+# requirements.txt
+
+# --- Orquestração ---
+# O motor principal do Airflow
+apache-airflow
+
+# Todos os "ganchos" (hooks) e operadores para o Google Cloud (GCS, BigQuery, etc.)
+apache-airflow-providers-google
+
+# --- Transformação ---
+# O motor do Apache Spark para Python
+pyspark
+
+# --- Ingestão & Conectores ---
+# Para fazer as chamadas HTTP para a API da NASA
+requests
+
+# Biblioteca cliente do Google para interagir com o GCS (Data Lake)
+# (Frequentemente já é instalada pelo provider do Airflow, mas é bom garantir)
+google-cloud-storage
+
+# Biblioteca cliente para o PySpark escrever no BigQuery (Data Warehouse)
+google-cloud-bigquery

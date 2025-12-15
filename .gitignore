@@ -1,0 +1,48 @@
+# --- 🐍 Python & Ambiente Virtual (O que estava dando erro) ---
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- 🔒 Segurança & Credenciais (CRÍTICO) ---
+# Bloqueia TODOS os arquivos JSON dentro da pasta de credenciais
+include/gcp/*.json
+
+# Bloqueia arquivos de chave soltos na raiz (se houver)
+service_account.json
+client_secret.json
+credentials.json
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# --- 🌪️ Airflow & Docker ---
+logs/
+plugins/
+tmp/
+temp/
+# Arquivos de PID gerados localmente
+airflow-worker.pid
+airflow-webserver.pid
+standalone_admin_password.txt
+webserver_config.py
+
+# --- ✨ Spark & Big Data ---
+metastore_db/
+derby.log
+# Ignora dados locais se você rodar testes no PC
+*.parquet
+*.avro
+# Se você quiser ignorar TODOS os JSONs de dados (cuidado se tiver config)
+*.json
+
+# --- 🖥️ Sistema Operacional & IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
